@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+    <style>
+        h1{
+            border:3px ridge orange;
+            border-radius: 10px;
+            background-color:aquamarine;
+            color: brown;
+            animation-name: ani;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes ani{
+            from{color: brown}
+            to{color:lightcoral;}
+        }
+        body{
+            background: linear-gradient(#EED7CE,#EAEAEA,#FFC4E1,#FF87CA);
+        }
+       div
+       {
+        padding: 20px 10px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow:10px 10px 7px 7px black ;
+            background:linear-gradient(#EED7CE,#EAEAEA,#FFC4E1,#FF87CA);
+            border: 3px solid black;
+            width: 250px;
+            height: auto;
+       }
+       a:link{
+        border:3px solid #316B83;
+        text-decoration: none;
+        border-radius: 6px;
+        background-color: bisque;
+       }
+       a:hover{
+        background-color:#82CD47 ;
+       }
+       input:invalid
+       {
+            background-color: #FF87CA;
+       }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Contact_Details</h1></center>
+    
+        <div>
+            <form action="">
+            <label for="fname">First Name</label>
+            <input type="text"required placeholder="Ex:Aarthi" name="fname" id="fname" pattern="[a-zA-z]{3,10}"><br><br>
+            <label for="lname">Last Name</label>
+            <input type="text"required placeholder="Ex:Paida" name="lname" id="lname" ><br><br>
+            <label for="email">Email</label>
+            <input type="email"required placeholder="Ex:aarthipaida@gmail.com" name="email" id="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"><br><br>
+            <label for="pno">Phone Number</label>
+            <input type="tel"required placeholder="Ex:8639993444" name="pno" id="pno" pattern="[6-9]{1}[0-9]{9}" ><br><br>
+            <label for="">Gender</label>
+            <input type="radio" name="Male" id="Male">
+            <label for="Male">Male</label>
+            <input type="radio" name="Female" id="Female">
+            <label for="Female">Female</label><br><br>
+            <label for="adderss">Address</label>
+            <textarea required placeholder="Ex:D-No,Colony name,Area,Dist" name="" id="" rows="2px" cols="20px" ></textarea></div></form><br>
+            <center><b>
+            <a href="Message.html" target="_blank">Submit</a></b></center>
+    
+</body>
+</html>
